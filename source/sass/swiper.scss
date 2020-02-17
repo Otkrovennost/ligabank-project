@@ -1,0 +1,52 @@
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 36px;
+
+  @media ($tablet) {
+    bottom: 11px;
+  }
+
+  @media ($mobile) {
+    bottom: 7px;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: #2028b6;
+  opacity: 1;
+
+  @media ($mobile) {
+    width: 5px;
+    height: 5px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f6f7ff;
+}
+
+.swiper-services {
+  position: relative;
+}
+
+.swiper-pagination-services {
+  display: none;
+
+  @media ($tablet) {
+    position: absolute;
+    display: block;
+    text-align: center;
+    transition: 0.3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+  }
+}
+
+.swiper-services .swiper-pagination-bullets {
+  @media ($mobile) {
+    bottom: 12px;
+  }
+}
+
+.swiper-pagination-services .swiper-pagination-bullet-active {
+  background-color: #e0e0e0;
+}
